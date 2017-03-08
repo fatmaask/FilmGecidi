@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/background_mondorf"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_signout"
+        android:id="@+id/logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:cropToPadding="false" />
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_profile"
+        android:clickable="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_gravity="center"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/loginImage"
+         />
+    <Button
+        android:text="GİRİŞ"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_below="@id/loginTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/loginEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/loginTitle"
+        android:text="android.studio@android.com"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

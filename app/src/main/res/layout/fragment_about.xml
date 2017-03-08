@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fatmaasik.filmgecidi.ProfileFragment"
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/ic_launcher_profile"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/ic_launcher_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Version 1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/aboutLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:text="@string/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Geliştirici Hakkında"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/aboutLinear"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_about_profil"
+            android:id="@+id/imageView2"
+             />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="@string/aboutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutName"
+                android:layout_weight="1" />
+            <TextView
+                android:text="@string/aboutUni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutUni"
+                android:layout_weight="1" />
+            <TextView
+                android:text="@string/aboutMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMail"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

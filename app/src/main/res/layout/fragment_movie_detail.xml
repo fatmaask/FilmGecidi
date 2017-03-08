@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fatmaasik.filmgecidi.MovieDetail"
+    android:background="@color/background">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/movie_video" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:weightSum="4"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Film"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movie_title"
+
+                        android:textSize="22sp"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rating"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/menu_item_normal"
+                        android:id="@+id/movie_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:text="Yıl :   "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/production_year"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textAllCaps="false" />
+
+                    <TextView
+                        android:text="Ülke :   "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/country"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:text="Süre :   "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/runtime"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:text="Kategori :   "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/genre"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:text="Oyuncular :   "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actor"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:text="Yönetmen :    "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/director"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <TextView
+                android:text="Film Özeti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/synopsis" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

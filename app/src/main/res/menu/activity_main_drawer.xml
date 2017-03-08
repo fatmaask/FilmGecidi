@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_menu_movie"
+            android:title="Filmler" />
+        <item
+            android:id="@+id/nav_top_movies"
+            android:icon="@drawable/ic_menu_star"
+            android:title="En İyi Filmler" />
+
+    </group>
+
+    <item android:title="Film Geçidi">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_info"
+                android:title="Hakkında" />
+        </menu>
+    </item>
+
+</menu>
